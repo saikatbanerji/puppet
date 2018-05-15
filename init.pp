@@ -19,6 +19,13 @@ exec { 'extract the jdk tar file':
   require => Exec['extract the jdk tar file']
 
        }
+       
+ $profile ="/root/.profile"
+file {"$profile":
+         ensure => 'file' ,
+        content => template("jdk8/profile.erb"),
+require => File['/home/ubuntu/jdk8']
+
 
 
 }
