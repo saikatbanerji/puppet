@@ -16,3 +16,9 @@
 # - %CommonAppData%\PuppetLabs\code\environments\%{environment}\hieradata on Windows
 # When specifying a datadir, make sure the directory exists.
   :datadir: /etc/puppetlabs/puppet/hieradata
+
+
+
+
+
+Creat hieradata folder and inside tyhat global.yaml
